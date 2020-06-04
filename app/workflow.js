@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./scripts/App.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app/assets/scripts/App.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./scripts/App.js":
-/*!************************!*\
-  !*** ./scripts/App.js ***!
-  \************************/
+/***/ "./app/assets/scripts/App.js":
+/*!***********************************!*\
+  !*** ./app/assets/scripts/App.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("alert(\"Hello, this is just a test.\");\r\n\n\n//# sourceURL=webpack:///./scripts/App.js?");
+eval("alert(\"Hello, this is just a test!!\");\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ })
 
