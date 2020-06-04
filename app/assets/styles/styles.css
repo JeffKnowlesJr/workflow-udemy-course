@@ -1,0 +1,9 @@
+$mainBlue: #2f5572;
+
+body {
+  color: peru;
+
+  h1 {
+    color: $mainBlue;
+  }
+}

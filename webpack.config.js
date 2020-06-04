@@ -1,5 +1,11 @@
 const path = require("path");
 
+const postCSSPlugins = [
+  require("postcss-simple-vars"),
+  require("postcss-nested"),
+  require("autoprefixer"),
+];
+
 module.exports = {
   entry: "./app/assets/scripts/App.js",
   output: {
@@ -8,5 +14,17 @@ module.exports = {
   },
   mode: "development",
   watch: true,
-  // Why is my linter creating trailing commas?
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader?url=false",
+          { loader: "postcss-loader", options: { plugins: postCSSPlugins } },
+        ],
+      },
+    ],
+  },
 };
+// Why is my linter creating trailing commas?

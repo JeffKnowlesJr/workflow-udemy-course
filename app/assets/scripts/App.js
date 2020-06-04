@@ -1,1 +1,2 @@
-alert("Hello, this is just a test!!");
+import "../styles/styles.css";
+// requires css-loader style-loader
