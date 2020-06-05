@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Responsive Images for Art Direction (Cropping) -->
+    <picture>
+      <source media="(min-width: 1200px)" srcset="images/dog-crop-large.jpg" />
+      <source media="(min-width: 760px)" srcset="images/dog-crop-medium./jpg" />
+      <img src="images/dog-crop-small.jpg" alt="Pupper in the sand." />
+    </picture>
+    <!-- Responsive Images for Image Resolution and File Size Situation -->
+    <img
+      alt="Pupper in the sand."
+      srcset="
+        images/dog-resolution-small.jpg   570w,
+        images/dog-resolution-medium.jpg 1200w,
+        images/dog-resolution-large.jpg  1920w
+      "
+    />
+  </body>
+</html>
