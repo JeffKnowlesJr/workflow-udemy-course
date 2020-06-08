@@ -1,3 +1,4 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 @import "normalize.css";
 @import "base/_variables.css";
 @import "base/_mixins.css";
@@ -7,3 +8,5 @@
 @import "modules/_wrapper.css";
 @import "modules/_page-section.css";
 @import "modules/_headline.css";
+@import "modules/_row.css";
+@import "modules/_col.css";

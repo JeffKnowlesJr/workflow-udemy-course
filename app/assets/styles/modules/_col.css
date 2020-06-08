@@ -1,0 +1,14 @@
+.col {
+  @mixin atSmall {
+    &-md-8-smaller {
+      width: 63% !important;
+      max-width: 63% !important;
+      min-width: 63% !important;
+    }
+    &-md-4-larger {
+      width: 37% !important;
+      max-width: 37% !important;
+      min-width: 37% !important;
+    }
+  }
+}
