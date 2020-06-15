@@ -1,11 +1,42 @@
 .row {
+  &--t-padding {
+    padding-top: 80px;
+  }
+
+  @mixin atMedium {
+    &--stretch {
+      display: flex;
+      align-items: stretch;
+    }
+
+    &--stretch > div {
+      display: flex;
+    }
+  }
+
   @mixin atLarge {
     &--gutters-large {
-      margin-left: -100px;
+      margin-left: -85px;
     }
 
     &--gutters-large > div {
-      padding-left: 100px;
+      padding-left: 85px;
+    }
+
+    &--gutters {
+      margin-left: -50px;
+    }
+
+    &--gutters > div {
+      padding-left: 50px;
+    }
+
+    &--gutters-small {
+      margin-left: -30px;
+    }
+
+    &--gutters-small > div {
+      padding-left: 30px;
     }
   }
 }

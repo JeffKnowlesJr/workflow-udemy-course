@@ -20,4 +20,14 @@
     }
     margin-bottom: 1rem;
   }
+
+  &--no-padding-at-small {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
 }
