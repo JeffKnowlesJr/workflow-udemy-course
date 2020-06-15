@@ -10,6 +10,14 @@
     color: #fff;
   }
 
+  &--no-b-padding-at-medium {
+    padding-bottom: 0;
+
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
+    }
+  }
+
   &--no-b-padding-at-small {
     padding-bottom: 0;
 

@@ -12,12 +12,27 @@
     }
   }
 
-  &__b-margin-until-medium {
+  &--b-margin-until-medium {
     margin-bottom: 1rem;
+
+    @mixin atMedium {
+      margin-bottom: 0;
+    }
   }
 
-  @mixin atMedium {
-    &__b-margin-until-medium {
+  &--no-x-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atLarge {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &--b-margin-until-large {
+    margin-bottom: 1rem;
+
+    @mixin atLarge {
       margin-bottom: 0;
     }
   }

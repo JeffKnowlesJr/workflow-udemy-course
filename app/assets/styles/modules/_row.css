@@ -1,15 +1,28 @@
 .row {
+  margin: 0;
+
   &--t-padding {
     padding-top: 80px;
   }
 
   @mixin atMedium {
-    &--stretch {
+    &--stretch-at-medium {
       display: flex;
       align-items: stretch;
     }
 
-    &--stretch > div {
+    &--stretch-at-medium > div {
+      display: flex;
+    }
+  }
+
+  @mixin atLarge {
+    &--stretch-at-large {
+      display: flex;
+      align-items: stretch;
+    }
+
+    &--stretch-at-large > div {
       display: flex;
     }
   }

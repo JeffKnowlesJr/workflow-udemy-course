@@ -15,10 +15,10 @@
   }
 
   &--b-margin {
+    margin-bottom: 1rem;
     @mixin atSmall {
       margin-bottom: 3.875rem;
     }
-    margin-bottom: 1rem;
   }
 
   &--no-padding-at-small {
@@ -26,6 +26,16 @@
     padding-right: 0;
 
     @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-padding-at-medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
       padding-left: 18px;
       padding-right: 18px;
     }
