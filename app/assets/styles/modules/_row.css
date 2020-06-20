@@ -36,6 +36,10 @@
       padding-left: 85px;
     }
 
+    &--gutters-large > div:first-of-type {
+      padding-left: 100px;
+    }
+
     &--gutters {
       margin-left: -50px;
     }
@@ -44,12 +48,20 @@
       padding-left: 50px;
     }
 
+    &--gutters > div:first-of-type {
+      padding-left: 65px;
+    }
+
     &--gutters-small {
       margin-left: -30px;
     }
 
     &--gutters-small > div {
       padding-left: 30px;
+    }
+
+    &--gutters-small > div:first-of-type {
+      padding-left: 45px;
     }
   }
 }
